@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/ListEdit.css" />
+    <style type="text/css">
+        .table {
+        }
+
+            .table td {
+                border: 0px;
+                border-top: 1px solid #eee;
+            }
+
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+            .row:after {
+                display: table;
+                content: " ";
+                clear: both;
+            }
+
+        .col {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @media (min-width: 992px) {
+            .col {
+                width: 50%;
+                float: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rightTitle">
+        <h1>新闻中心<small>列表页</small></h1>
+        <ol>
+            <li><a href="Index.html"><i class="glyphicon glyphicon-home"></i>首页</a></li>
+            <li><span>&gt;</span><a href="List.html">新闻中心</a></li>
+            <li><span>&gt;</span><small>新增</small></li>
+        </ol>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col">
+                <div class="box box-info">
+                    <h3 class="box-title">登录信息</h3>
+                    <table class="table">
+                        <tr>
+                            <td>上一次登录名</td>
+                            <td>7654561231.Q</td>
+                        </tr>
+                        <tr>
+                            <td>上一次登陆的时间</td>
+                            <td>2016-06-08</td>
+                        </tr>
+                        <tr>
+                            <td>上一次登陆的IP</td>
+                            <td>192.168.0.132</td>
+                        </tr>
+                        <tr>
+                            <td>上一次登陆的地区</td>
+                            <td>192.168.0.132</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box box-success">
+                    <h3 class="box-title">技术支持</h3>
+                    <table class="table">
+                        <tr>
+                            <td>QQ</td>
+                            <td>123456789</td>
+                        </tr>
+                        <tr>
+                            <td>联系人</td>
+                            <td>王先生</td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>1341989324</td>
+                        </tr>
+                        <tr>
+                            <td>邮箱</td>
+                            <td>3890@qq.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="box box-danger">
+            <h3 class="box-title">系统信息</h3>
+            <table class="table">
+                <tr>
+                    <td>数据库</td>
+                    <td>Sql Server</td>
+                </tr>
+                <tr>
+                    <td>编程语言</td>
+                    <td>Asp.Net 4.0</td>
+                </tr>
+                <tr>
+                    <td>服务器名称</td>
+                    <td>PC21200036</td>
+                </tr>
+                <tr>
+                    <td>IIS版本</td>
+                    <td>IIS 7.0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

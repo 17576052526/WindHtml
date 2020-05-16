@@ -1,0 +1,172 @@
+﻿html,body,form,div,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6{margin: 0px;padding: 0px;}
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}  /* 不把padding计算在整体的宽度和高度之中 */
+html,body{height:100%;}
+body{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;line-height: 1.42857143;color: #333;background-color: #f9f9f9;}
+ol,ul{list-style: none;}
+a{color: #428bca;text-decoration: none;}
+img{border:0;}
+h1,h2,h3,h4,h5,h6{line-height:1.1;}
+small {color:#999;}
+/**********************BootStrap样式或通用样式*********************/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-search:before {content: "\e003";}
+.glyphicon-refresh:before {content: "\e031";}
+.glyphicon-remove:before {content: "\e014";}
+.glyphicon-plus:before {content: "\2b";}
+.glyphicon-info-sign:before {content: "\e086";}
+.glyphicon-edit:before {content: "\e065";}
+.glyphicon-chevron-left:before {content: "\e079";}
+.glyphicon-chevron-right:before {content: "\e080";}
+.glyphicon-home:before {content: "\e021";}
+
+.btn {
+    line-height: 1.428571429;
+    padding: 6px 12px;
+    display: inline-block;
+    vertical-align: middle;
+    border:1px solid transparent;
+    border-radius: 4px;
+    user-select: none;
+    cursor:pointer;
+}
+.btn-default {color: #333;background-color: #fff;border-color: #ccc;}
+.btn-default:hover,.btn-default:active {color: #333;background-color: #e6e6e6;border-color: #adadad;}
+.btn.btn-primary {color:#fff;background-color: #3c8dbc;border-color: #367fa9;}
+.btn.btn-primary:hover,.btn.btn-primary:active {background-color: #367fa9;}
+.btn-success {color: #fff;background-color: #5cb85c;border-color: #4cae4c;}
+.btn-success:hover,.btn-success:active {color: #fff;background-color: #449d44;border-color: #398439;}
+.btn-info {color: #fff;background-color: #5bc0de;border-color: #46b8da;}
+.btn-info:hover,.btn-info:active {color: #fff;background-color: #31b0d5;border-color: #269abc;}
+.btn-warning {color: #fff;background-color: #f0ad4e;border-color: #eea236;}
+.btn-warning:hover,.btn-warning:active {color: #fff;background-color: #ec971f;border-color: #d58512;}
+.btn-danger {color: #fff;background-color: #d9534f;border-color: #d43f3a;}
+.btn-danger:hover,.btn-danger:active {color: #fff;background-color: #c9302c;border-color: #ac2925;}
+
+.input-text{
+    width:200px;
+    line-height: 1.428571429;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid #ccc;
+    vertical-align:middle;
+}
+input-text:focus {outline:0;border-color: #66afe9;}
+
+.box {
+    padding:10px 10px;
+    margin-bottom:20px;
+    border:1px solid #F0F0F0;
+    border-top:2px solid #C1C1C1;
+    border-radius:3px;
+    box-shadow: 0px 1px 1px #f5f5f5;
+    background-color: #ffffff;
+}
+.box .box-title {display: inline-block;padding: 10px 0px 10px 0px;font-size: 18px;font-weight: 400;cursor: default;}
+.box .box-head {margin:0px -10px 10px -10px;padding:0px 10px 10px 10px;border-bottom:1px solid #f0f0f0;}
+.box .box-foot {margin:20px -10px 0px -10px;padding:10px 10px 0px 10px;border-top:1px solid #f0f0f0;}
+.box.box-primary {border-top-color: #3c8dbc;}
+.box.box-warning {border-top-color: #f39c12;}
+.box.box-success {border-top-color: #00a65a;}
+.box.box-danger {border-top-color: #f56954;}
+.box.box-info {border-top-color: #00c0ef;}
+
+.table {
+    min-width: 100%;
+    border:1px solid #ddd;
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout:fixed;
+    white-space: nowrap;
+}
+.table th,.table td{
+    padding: 8px;
+    line-height: 1.42857143;
+    border-bottom: 1px solid #ddd;
+    border-right:1px solid #eee;
+}
+.table th {text-align:left;border-bottom:2px solid #eee;}
+.table tbody tr:hover {background-color:#f5f5f5;}
+.table td img{max-width:100%;max-height:20px;display:block;}
+/*********************** List样式 ************************/
+.rightTitle {
+    padding: 15px 15px 10px 20px;
+    background-color: #fbfbfb;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    position:relative;
+}
+.rightTitle h1 {font-size:22px;}
+.rightTitle h1 small{
+    margin-left:10px;
+    font-size:13px;
+    font-weight:normal;
+}
+.rightTitle ol {
+    padding: 4px 5px;
+    position:absolute;
+    top: 15px;
+    right: 10px;
+}
+.rightTitle ol:after{display:table;content: " ";clear: both;}
+.rightTitle ol li {float:left;}
+.rightTitle ol li a {color:#444;font-size:12px;}
+.rightTitle ol li i{margin-right:7px;}
+.rightTitle ol li span{margin:0px 8px;color:#999;}
+@media (max-width: 767px) {
+    .rightTitle ol {
+        position:static;
+        margin-top: 6px;
+        background-color: #efefef;
+    }
+}
+
+.content{padding: 20px 15px 0px 15px;}
+.list{width:100%;margin-top:10px;overflow:auto;}
+
+.pager {display:inline-block;vertical-align:middle;}
+.pager:after{display:table;content: " ";clear: both;}
+.pager a {padding: 7px 14px;font-size:14px;border: 1px solid #ddd;margin-left:-1px;float:left;}
+.pager a:first-child {border-top-left-radius:4px;border-bottom-left-radius:4px;}
+.pager a:last-child {border-top-right-radius:4px;border-bottom-right-radius:4px;}
+.pager a:hover,.pager .curr{background-color:#eee;}
+.pagerDesc {line-height:34px;margin-left:20px;display:inline-block;vertical-align:middle;}
+
+.box-input{
+    width:33%;
+    display:inline-block;
+    margin-bottom:15px;
+    vertical-align:top;
+    position:relative;
+    padding-left:120px;
+}
+.box-input>*{width:100%;}
+.box-input>label{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:120px;
+    padding:7px 15px 7px 10px;
+    text-align:right;
+    font-weight:bold;
+}
+@media (max-width: 992px) {
+    .box-input{width:49%;}
+}
+@media (max-width:767px) {
+    .box-input{width:100%;}
+}
